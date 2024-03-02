@@ -37,10 +37,33 @@ const html = `
             .blablo{
                 text-align: center;
             }
+            .fireworks {
+        width: 100px;
+        height: 100px;
+        background-image: url('link_to_fireworks_image');
+        position: absolute;
+        animation: fireworks 5s linear infinite;
+    }
+
+    @keyframes fireworks {
+        0% {
+            transform: translateY(0) rotate(0);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(-200px) rotate(180deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-400px) rotate(360deg);
+            opacity: 0;
+        }
+    }
         </style>
     </head>
 
     <body>
+    <div class="fireworks"></div>
         <div class="blablo">
             <a href="https://png2.cleanpng.com/sh/b724ef8b7085f887cd6a511f65fe5e4d/L0KzQYm3U8MyN5x8iZH0aYP2gLBuTflxcJDzfZ9ubXHsfH7pjCgua5DyiOd9ZYKwebT2jwMudJDsh59ubXHsfH68gfJnOWg1TaNvOEK5SHA9WcA2P2M9TaMAMkK3R4OAUMkyOmo2RuJ3Zx==/kisspng-iphone-email-box-computer-icons-logo-email-5abf17051f8268.6905728515224727091291.png">
                 <img src="https://png2.cleanpng.com/sh/b724ef8b7085f887cd6a511f65fe5e4d/L0KzQYm3U8MyN5x8iZH0aYP2gLBuTflxcJDzfZ9ubXHsfH7pjCgua5DyiOd9ZYKwebT2jwMudJDsh59ubXHsfH68gfJnOWg1TaNvOEK5SHA9WcA2P2M9TaMAMkK3R4OAUMkyOmo2RuJ3Zx==/kisspng-iphone-email-box-computer-icons-logo-email-5abf17051f8268.6905728515224727091291.png" alt="Email icon" width="100">
