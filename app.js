@@ -57,8 +57,7 @@ const html = `
 
                 const icon= icons[type];
                 const delay = (duration / 1000).toFixed(2);
-
-            \
+                
                 toast.classList.add('toast', 'toast--' + type);
 
                 toast.style.animation = 'move_ ease .3s, eraser linear 1s ' + delay + 's forwards';
